@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://ww.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+<title>Insert title here</title>
+</head>
+<body>
+<h2 align="center"> la vue acceuil</h2>
+<h3 th:text="${msg}"></h3>
+<h3 th:text="${version}"></h3>
+<ul>
+<li th:text="${ec}">Nom de l'ecole  </li> 
+<li th:text="${forma}"></li>
+<li td:text="${tab}"></li>
+<li th:text="${tab}"></li>
+</ul>
+<ul th:each="name:${names}">
+<li th:text="${name}">...</li>
+</ul>
+<ul th:each="animml:${animaux}">
+<span th:text="${animml.nom}"></span>
+<span th:text="${animml.age}"></span>
+</body>
+</html>
